@@ -1,0 +1,11 @@
+name: data_39
+channels:
+  - defaults
+dependencies:
+  - scipy
+  - seaborn
+  - python=3.9
+  - numpy
+  - pandas
+  - ipykernel
+prefix: /home/sch/anaconda3/envs/data_39

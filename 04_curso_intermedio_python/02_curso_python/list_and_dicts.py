@@ -20,3 +20,7 @@ for key, value in super_dict.items():
 for x in super_list:
     for key, value in x.items():
         print(key, "-", value)
+
+for x,y in my_dict.items():
+    print(x, " ",y)
+

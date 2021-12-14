@@ -15,7 +15,7 @@ def main():
 
     while True:
         menu = input(
-            """
+"""
 Quieres lanzar los dados?
 ¿si o no?
 """

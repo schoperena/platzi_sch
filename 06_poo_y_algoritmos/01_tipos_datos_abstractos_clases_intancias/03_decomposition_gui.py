@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+import os
 
 
 class Car:
@@ -61,21 +62,24 @@ class Airbag:
 
 
 def main():
+    
+    os.system("cls")
 
     car_1 = []
 
     main_window_layout = [
-        [sg.Text("ingrese los datos:")],
-        [sg.Text("Modelo:"), sg.InputText(s=(20,10), expand_x=True, do_not_clear=False, focus=True, tooltip="Ingrese el modelo")],
-        [sg.Text("Marca: "), sg.InputText(s=(20,10), expand_x=True, do_not_clear=False, tooltip="Ingrese la marca")],
-        [sg.Text("Color:  "), sg.InputText(s=(20,10), expand_x=True, do_not_clear=False, tooltip="Ingrese el color")],
-        [sg.Checkbox("Airbag", default=False)],
-        [sg.Button("Ok"), sg.Button("Cerrar")]
+        [sg.Text("ingrese los datos:", background_color="black")],
+        [sg.Text("Model:", background_color="black"), sg.InputText(s=(20,10), expand_x=True, do_not_clear=False, focus=True, tooltip="Ingrese el modelo")],
+        [sg.Text("Brand:", background_color="black"), sg.InputText(s=(20,10), expand_x=True, do_not_clear=False, tooltip="Ingrese la marca")],
+        [sg.Text("Color:", background_color="black"), sg.InputText(s=(20,10), expand_x=True, do_not_clear=False, tooltip="Ingrese el color")],
+        [sg.Checkbox("Airbag", default=False, background_color="black")],
+        [sg.Button("Ok", s=(10,1), mouseover_colors="green"), sg.Button("Cerrar", s=(10,1), mouseover_colors="green"),]
     ]
 
     try:
 
-        window = sg.Window("Car Generator", main_window_layout, keep_on_top=True, no_titlebar=True)
+        window = sg.Window("Car Generator", main_window_layout, keep_on_top=True,
+        background_color="black", button_color="gray", border_depth=2, margins=(30,10))
 
         while True:
             event, values = window.read()

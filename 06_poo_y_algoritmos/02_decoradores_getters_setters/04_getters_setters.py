@@ -1,13 +1,13 @@
 class Millas:
 	def __init__(self):
-		self._distancia = 0
+		self.__distancia = 0
 
 	# Función para obtener el valor de _distancia
 	# Usando el decorador property
 	@property
 	def obtener_distancia(self):
 		print("Llamada al método getter")
-		return self._distancia
+		return self.__distancia
 
 	# Función para definir el valor de _distancia
 	@obtener_distancia.setter
@@ -15,7 +15,7 @@ class Millas:
 		if valor < 0:
 			raise ValueError("No es posible convertir distancias menores a 0.")
 		print("Llamada al método setter")
-		self._distancia = valor
+		self.__distancia = valor
 
 
 def main():

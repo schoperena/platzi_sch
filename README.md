@@ -1,3 +1,3 @@
 # Platzi_sch
 
-Archivos relacionados a os cursos de platzi
+Archivos relacionados a los cursos de platzi

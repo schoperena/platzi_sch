@@ -1,5 +1,6 @@
 import random
 
+
 def ordenamiento_por_mezcla(lista):
     if len(lista) > 1:
         medio = len(lista) // 2
@@ -30,13 +31,13 @@ def ordenamiento_por_mezcla(lista):
         while i < len(izquierda):
             lista[k] = izquierda[i]
             i += 1
-            k +=1
+            k += 1
 
         while j < len(derecha):
             lista[k] = derecha[j]
             j += 1
             k += 1
-        
+
         print(f'izquierda {izquierda}, derecha {derecha}')
         print(lista)
         print('-' * 50)

@@ -2,4 +2,10 @@
 
 # Platzi_sch
 
+<<<<<<< Updated upstream
 Archivos relacionados a la ruta de aprendisaje de inteligencia artificial y machine learning en Platzi.com.
+=======
+Archivos relacionados a los cursos de platzi
+
+![](../../Pictures/repo image.png)
+>>>>>>> Stashed changes

@@ -14,7 +14,7 @@ def varianza(X):
 
     return acumulador / len(X)
 
-
+ 
 def desviacion_estandar(X):
     return math.sqrt(varianza(X))
 
